@@ -1,0 +1,842 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Whatsapp</title>
+	<script src="https://kit.fontawesome.com/a5f2c2c277.js" crossorigin="anonymous"></script>
+	<script src="../Jquery file/jquery.js"></script>
+	<script>
+	$(document).ready(function(){
+						$(".arrow").click(function(){
+											 $(".submenu").show();
+											 })
+						})
+		$(document).ready(function(){
+						$(".arrow2").click(function(){
+											 $(".submenu").hide();
+											 })
+						})
+	
+	</script>
+	
+	
+	<style>
+		body{
+			margin: 0;
+			padding: 0;
+		}
+		.nav{
+			width: 100%;
+			height:90px;
+			background: #128c7e;
+			display: flex;
+			align-items: center;
+			position: sticky;
+			top: 0;
+		}
+		.logo{
+			margin-left: 230px;
+			width: 160px;
+			height: 40px;
+			cursor: pointer;
+		}
+		.ul1{
+			list-style: none;
+			display: flex;
+			padding: 0;
+			margin-left: 40px;
+		}
+		.ul1 li{
+			color: white;
+			margin-left: 60px;
+			font-size: 16px;
+			cursor: pointer;
+		}
+		.globe{
+			margin-right: 5px;
+			font-size: 15px;
+		}
+		.arrow{
+			margin-left: 5px;
+			font-size: 12px;
+		}
+		.submenu{
+			width: 900px;
+			height: 682px;
+			background: white;
+			position: absolute;
+			top: -11px;
+			left: -946px;
+			overflow-y: scroll;
+			padding-bottom: 30px;
+			border-radius: 2px;
+			display: none;
+		}
+		.en{
+			position: relative;
+		}
+		
+		.submenu h1{
+			margin-left: 50px;
+			margin-top: 30px;
+			color: black;
+		}
+		.arrow2{
+			font-size: 14px;
+			margin-left: 460px;
+			margin-top: 30px;
+			color: black;
+		}
+		.select{
+			display: flex;
+		}
+		.row ul{
+			list-style: none;
+			margin: 0;
+			padding: 0;
+		}
+		.row li a{
+			color: black;
+			text-decoration: none;
+		}
+		.row li{
+			margin-top: 20px;
+			font-size: 20px;
+			margin-left: 50px;
+		}
+		.row li:hover{
+			text-decoration: underline;
+		}
+		
+		.languages{
+			display: flex;
+		}
+		.bars{
+			color: white;
+			position: absolute;
+			left: 430px;
+			top: 20px;
+			font-size: 24px;
+			display: none;
+			cursor: pointer;
+		}
+		.logo2{
+			height: 70px;
+			width: 70px;
+			margin-left: auto;
+			margin-right: auto;
+			display: block;
+		}
+		.responsive{
+			height: auto;
+			width: 100%;
+			background: #128c7e;
+			display: none;
+			margin-top: -20px;
+		}
+		.responsive h2{
+			text-align: center;
+			color: white;
+			margin-top: 40px;
+			font-size: 25px;
+		}
+		.responsive h3{
+			text-align: center;
+			color: white;
+			margin-top: 38px;
+			font-size: 17px;
+			font-weight: 600;
+		}
+		.btn{
+			width: 210px;
+			height: 60px;
+			display: block;
+			margin-left: auto;
+			margin-right: auto;
+			border-radius: 50px;
+			border: none;
+			background: #075e54;
+			color: white;
+			font-size: 16px;
+			margin-top: 30px;
+			cursor: pointer;
+		}
+		.phone{
+			height: 400px;
+			width: 300px;
+			margin-top: 30px;
+			margin-left: auto;
+			margin-right: auto;
+			display: block;
+		}
+		.left h1{
+			margin-left: 360px;
+			margin-top: 120px;
+			font-size: 35px;
+			font-weight: 500;
+		}
+		.left h3{
+			margin-top: 50px;
+			margin-left: 360px;
+			font-weight: 500;
+			font-size: 20px;
+		}
+		.left h4{
+			margin-top: 20px;
+			margin-left: 360px;
+			font-weight: 500;
+			font-size: 18px;
+			color: #5e5e5e;
+		}
+		.list2{
+			list-style: none;
+			padding: 0;
+			margin-top: 50px;
+			position: relative;
+		}
+		.list2 li{
+			margin-top: 20px;
+		}
+		.list2 li a{
+			color: #128c7e;
+			text-decoration: none;
+			margin-left: 400px;
+			font-weight: 500;
+			font-size: 20px;
+			
+		}
+		.list2 a:hover{
+			text-decoration: underline;
+		}
+		.list3{
+			list-style: none;
+			position: absolute;
+			margin-left: 320px;
+			margin-top: 10px;
+		}
+		.list3 li{
+			margin-top: 20px;
+			font-size: 18px;
+			color: #128c7e;
+		}
+		.list3 ul{
+			padding: 0;
+			margin: 0;
+		}
+		.list4{
+			list-style: none;
+			position: absolute;
+			left: 500px;
+			top:-14px;
+			color: #128c7e;
+			font-size: 12px;
+		}
+		.one{
+			margin-left: -68px;
+		}
+		.two{
+			margin-left: -78px;
+			margin-top: 10px;
+		}
+		.three{
+			margin-left: 32px;
+			margin-top: 7px;
+		}
+		.section2{
+			display: flex;
+		}
+		.right{
+			height: 570px;
+			width: 300px;
+			margin-top: 30px;
+			margin-left: 50px;
+		}
+		.section3{
+			display: flex;
+		}
+		.left1{
+			width: 700px;
+			height: auto;
+			background: #d8e8ea;
+			margin-left: 40px;
+			margin-top: 90px;
+		}
+		.left1 h1{
+			padding-top: 80px;
+			text-align: center;
+			font-size: 35px;
+		}
+		.left1 p{
+			text-align: center;
+			font-size: 20px;
+			margin-top: 50px;
+		}
+		.left1 p a{
+			text-decoration: none;
+			color: #39b3ed;
+		}
+		.left1 p a:hover{
+			text-decoration: underline;
+		}
+		.phone2{
+			width: 380px;
+			height: auto;
+			margin-top: 100px;
+			margin-left: auto;
+			margin-right: auto;
+			display: block;
+		}
+		.right1{
+			width: 700px;
+			height: auto;
+			background: #e7f0e4;
+			margin-left: 40px;
+			margin-top: 90px;
+		}
+		.circle{
+			width: 350px;
+			height: 350px;
+			background: #77d7c8;
+			margin-left: auto;
+			margin-right: auto;
+			border-radius: 100%;
+			margin-top: 80px;
+		}
+		.right1 h3{
+			text-align: center;
+			color: #5e5e5e;
+			margin-top: 55px;
+		}
+		.right1 h1{
+			text-align: center;
+			margin-top: 10px;
+			font-size: 35px;
+		}
+		.right1 p{
+			text-align: center;
+			font-size: 20px;
+			margin-top: 10px;
+			line-height: 25px;
+		}
+		.resp-left{
+			display: none;
+		}
+		.resp-right{
+			display: none;
+		}
+		.btn2{
+			display: block;
+			margin-left: auto;
+			margin-right: auto;
+			width: 220px;
+			height: 50px;
+			border-radius: 650px;
+			margin-top: 70px;
+			background: transparent;
+			border: 1px solid #128c7e;
+			color: #128c7e;
+			cursor: pointer
+		}
+		.footer{
+			height: 400px;
+			width: 100%;
+			background: #273443;
+			margin-top: 100px;
+			display: flex;
+		}
+		.line1{
+			margin-left: 230px;
+			padding-top: 20px;
+		}
+		.line1 h1{
+			color: white;
+			font-size: 20px;
+			margin-bottom: 20px;
+		}
+		.line1 ul{
+			list-style: none;
+			padding: 0;
+			margin: 0;
+		}
+		.line1 li{
+			color: white;
+			font-size: 20px;
+			margin-top: 20px;
+		}
+		.line2{
+			margin-left: 150px;
+			padding-top: 20px;
+		}
+		.line2 h1{
+			color: white;
+			font-size: 20px;
+			margin-bottom: 42px;
+		}
+		.line2 ul{
+			list-style: none;
+			padding: 0;
+			margin: 0;
+		}
+		.line2 li{
+			color: white;
+			font-size: 20px;
+			margin-top: 20px;
+		}
+		.rfooter{
+			height: auto;
+			width: 100%;
+			background: #273443;
+			margin-top: 100px;
+			display: none;
+		}
+		.rline1{
+			margin-left: 20px;
+			padding-top: 20px;
+		}
+		.rline1 h1{
+			color: white;
+			font-size: 20px;
+			margin-bottom: 20px;
+		}
+		.rline1 ul{
+			list-style: none;
+			padding: 0;
+			margin: 0;
+		}
+		.rline1 li{
+			color: white;
+			font-size: 20px;
+			margin-top: 20px;
+		}
+		.rline2{
+			margin-left: 150px;
+			padding-top: 20px;
+		}
+		.rline2 h1{
+			color: white;
+			font-size: 20px;
+			margin-bottom: 20px;
+		}
+		.rline2 ul{
+			list-style: none;
+			padding: 0;
+			margin: 0;
+		}
+		.rline2 li{
+			color: white;
+			font-size: 20px;
+			margin-top: 20px;
+		}
+		.rfooter li:hover{
+			text-decoration: underline;
+		}
+		.footer li:hover{
+			text-decoration: underline;
+		}
+				.footer2{
+			height: 80px;
+			width: 100%;
+			background: #1c1e21;
+			display: flex;
+			align-items: center;
+		}
+		.footer2 h3{
+			margin: 0;
+			padding: 0;
+			color: white;
+			margin-left: 230px;
+		}
+		.footer2 h4{
+			margin: 0;
+			padding: 0;
+			color: white;
+			margin-left: 730px;
+			cursor: pointer;
+		}
+		.rfooter2{
+			display: none;
+		}
+
+		
+		
+		
+		
+		
+		@media (max-width:700px){
+			.list{
+				display: none;
+			}
+			.nav{
+				position: relative;
+			}
+			.logo{
+				display: none;
+			}
+			.logo2{
+				margin-top: 20px;
+			}
+			.bars{
+				display: block;
+			}
+			.responsive{
+				display: block;
+			}
+			.section2{
+				display: none;
+			}
+			.section3{
+				flex-direction: column;
+				margin: 0;
+				padding: 0;
+			}
+			.right1{
+				margin: 0;
+				padding: 0;
+				width: 100%;
+			}
+			.left1{
+				margin: 0;
+				padding: 0;
+				width: 100%;
+			}
+			.leftp{
+				display: none;
+			}
+			.leftp a{
+			text-decoration: none;
+			color: #39b3ed;
+		}
+		.leftp a:hover{
+			text-decoration: underline;
+		}
+			.left1 h1{
+				font-size: 25px;
+				margin-top: -10px;
+			}
+			.resp-left{
+			    text-align: center;
+			    margin-top: 10px;
+			    line-height: 25px;
+			    display: block;
+			}
+			.resp-left p{
+				font-size: 18px;
+				margin-top: -1px;
+			}
+			.right1 h1{
+				font-size: 26px;;
+				margin-top: 10px;
+			}
+			.right1 h3{
+				font-size: 18px;
+				margin-bottom: 0;
+			}
+			.right1 p{
+				display: none;
+			}
+			.footer{
+				display: none;
+			}
+			.resp-right{
+			    display: block;
+			    text-align: center;
+			    font-size: 18px;
+			    margin-top: 10px;
+			    line-height: 25px;
+			    margin-bottom: 30px;
+			}
+			.rfooter{
+				display: flex;
+			}
+			.footer2{
+				display: none;
+			}
+			.rfooter2{
+			height: 80px;
+			width: 100%;
+			background: #1c1e21;
+			display: block;
+		}
+			.rfooter2 h3{
+			margin: 0;
+			padding: 0;
+			color: white;
+			padding-top: 10px;
+			margin-left: 10px;
+		}
+		.rfooter2 h4{
+			margin: 0;
+			padding: 0;
+			color: white;
+			margin-top: 10px;
+			cursor: pointer;
+			margin-left: 10px;
+		}
+	
+		}
+	
+	
+	</style>
+</head>
+
+<body>
+	<div class="nav">
+	<div><img src="Images/logo.svg" class="logo"></div>
+	<div class="bars"><i class="fa-solid fa-bars"></i>
+		
+			
+		</div>
+	<div class="list">
+	<ul class="ul1">
+		<li>WHATSAPP WEB</li>
+		<li>FEATURES</li>
+		<li>DOWNLOAD</li>
+		<li>SECURITY</li>
+		<li>HELP CENTER</li>
+		<li class="en"><i class="fa-solid fa-globe globe"></i>EN<i class="fa-solid fa-caret-down arrow"></i>
+		<div class="submenu">
+			<div class="select">
+			<div><h1>Select your language</h1></div>
+				<div><i class="fa-solid fa-caret-up arrow2"></i></div>
+			</div>
+			<div class="languages">
+			<div class="row">
+				<ul>
+				<li><a href="#">azərbaycan</a></li>
+				<li><a href="#">català</a></li>
+				<li><a href="#">eesti</a></li>
+				<li><a href="#">Gaeilge</a></li>
+				<li><a href="#">latviešu</a></li>
+				<li><a href="#">norsk bokmål</a></li>
+				<li><a href="#">Português (Brasil)</a></li>
+				<li><a href="#">slovenčina</a></li>
+				<li><a href="#">Tiếng Việt</a></li>
+				<li><a href="#">қазақ тілі</a></li>
+				<li><a href="#">українська</a></li>
+				<li><a href="#">اردو</a></li>
+				<li><a href="#">ಕನ್ನಡ</a></li>
+				<li><a href="#">తెలుగు</a></li>
+				<li><a href="#">繁體中文（台灣）</a></li>
+				</ul>
+				</div>
+				<div class="row">
+				<ul>
+				<li><a href="#">Afrikaans</a></li>
+				<li><a href="#">čeština</a></li>
+				<li><a href="#">English</a></li>
+				<li><a href="#">hrvatski</a></li>
+				<li><a href="#">lietuvių</a></li>
+				<li><a href="#">o‘zbek</a></li>
+				<li><a href="#">Português (Portugal)</a></li>
+				<li><a href="#">slovenščina</a></li>
+				<li><a href="#">Türkçe</a></li>
+				<li><a href="#">македонски</a></li>
+				<li><a href="#">עברית</a></li>
+				<li><a href="#">বাংলা</a></li>
+				<li><a href="#">मराठी</a></li>
+				<li><a href="#">മലയാളം</a></li>
+				<li><a href="#">繁體中文（香港）</a></li>
+				</ul>
+				</div>
+				<div class="row">
+				<ul>
+				<li><a href="#">Bahasa Indonesia</a></li>
+				<li><a href="#">dansk</a></li>
+				<li><a href="#">español</a></li>
+				<li><a href="#">italiano</a></li>
+				<li><a href="#">magyar</a></li>
+				<li><a href="#">Filipino</a></li>
+				<li><a href="#">română</a></li>
+				<li><a href="#">suomi</a></li>
+				<li><a href="#">Ελληνικά</a></li>
+				<li><a href="#">русский</a></li>
+				<li><a href="#">العربية</a></li>
+				<li><a href="#">हिन्दी</a></li>
+				<li><a href="#">ਪੰਜਾਬੀ</a></li>
+				<li><a href="#">ไทย</a></li>
+				<li><a href="#">日本語</a></li>
+				</ul>
+				</div>
+				<div class="row">
+				<ul>
+				<li><a href="#">Melayu</a></li>
+				<li><a href="#">Deutsch</a></li>
+				<li><a href="#">français</a></li>
+				<li><a href="#">Kiswahili</a></li>
+				<li><a href="#">Nederlands</a></li>
+				<li><a href="#">polski</a></li>
+				<li><a href="#">shqip</a></li>
+				<li><a href="#">svenska</a></li>
+				<li><a href="#">български</a></li>
+				<li><a href="#">српски</a></li>
+				<li><a href="#">فارسی</a></li>
+				<li><a href="#">ગુજરાતી</a></li>
+				<li><a href="#">தமிழ்</a></li>
+				<li><a href="#">简体中文</a></li>
+				<li><a href="#">한국어</a></li>
+				</ul>
+				</div>
+			</div>
+		</li>
+		</ul>
+	</div>
+	</div>
+	
+	
+	<div class="responsive">
+	<div><img src="Images/logo2.svg" class="logo2"></div>
+		<h2>Simple. Secure.<br>Reliable messaging.</h2>
+		<h3>With WhatsApp, you'll get fast, simple, secure<br> messaging and calling for free*, available on phones<br> all over the world.</h3>
+		<button class="btn">DOWNLOAD NOW</button>
+		<img src="Images/phone2.png" class="phone">
+		</div>
+	
+	
+	<div class="section2">
+	<div class="left">
+		<h1>Simple. Secure.<br>Reliable messaging.</h1>
+		<h3>With WhatsApp, you'll get fast, simple, secure <br>messaging and calling for free*, available on<br> phones all over the world.</h3>
+		<h4>* Data charges may apply. Contact your provider for<br> details.</h4>
+		<ul class="list3">
+		<li><i class="fa-brands fa-android icon android"></i></li>
+		<li><i class="fa-brands fa-apple icon iphone"></i></li>
+		<li><i class="fa-solid fa-display icon mac"></i></li>
+		</ul>
+		<ul class="list2">
+		<li><a href="#">Android</a></li>
+		<li><a href="#">iPhone</a></li>
+		<li><a href="#">Mac or Windows PC</a></li>
+			<ul class="list4">
+		<li><i class="fa-solid fa-chevron-right one"></i></li>
+		<li><i class="fa-solid fa-chevron-right two"></i></li>
+		<li><i class="fa-solid fa-chevron-right three"></i></li>
+		</ul>
+		
+			</ul>
+		</div>
+		<div class="right"><img src="Images/phone.png" class="right"></div>
+	</div>
+	<div class="section3">
+	<div class="left1">
+		<h1>WhatsApp Business App</h1>
+		<p class="leftp"><a href="#">WhatsApp Business</a> is a free to download app that was built with the<br> small business owner in mind. Create a catalog to showcase your<br> products and services. Connect with your customers easily by using<br> tools to automate, sort and quickly respond to messages.</p>
+		<p class="leftp">WhatsApp can also help medium and large businesses provide<br> customer support and deliver important notifications to customers.<br> Learn more about<a href="#"> WhatsApp Business API.</a></p>
+		<div class="resp-left">
+	<p><a href="#">WhatsApp Business</a> is a free to download app that<br> was built with the small business owner in mind.<br> Create a catalog to showcase your products and <br>services. Connect with your customers easily by using<br> tools to automate, sort and quickly respond to<br> messages.</p>
+		<p>WhatsApp can also help medium and large<br> businesses provide customer support and deliver<br> important notifications to customers. Learn more<br> about <a href="#">WhatsApp Business API.</a></p>
+	</div>
+		<img src="Images/phone3.png" class="phone2">
+		</div>
+		<div class="right1">
+		<div class="circle"></div>
+			<h3>END-TO-END ENCRYPTION</h3>
+			<h1>Security by Default</h1>
+			<p>Some of your most personal moments are shared on WhatsApp, which<br> is why we built end-to-end encryption into the latest versions of our<br> app. When end-to-end encrypted, your messages and calls are secured<br> so only you and the person you're communicating with can read or <br>listen to them, and nobody in between, not even WhatsApp.</p>
+		
+		<div class="resp-right">
+		Some of your most personal moments are shared on<br> WhatsApp, which is why we built end-to-end<br> encryption into the latest versions of our app. When<br> end-to-end encrypted, your messages and calls are<br> secured so only you and the person you're <br>communicating with can read or listen to them, and <br>nobody in between, not even WhatsApp.
+
+         </div>
+		</div>
+	</div>
+	<button class="btn2">EXPLORE FEATURES</button>
+	<div class="footer">
+	<div class="line1">
+		<h1>WHATSAPP</h1>
+		<ul>
+		<li>Features</li>
+		<li>Security</li>
+		<li>Download</li>
+		<li>Whatsap Web</li>
+		<li>Business</li>
+		<li>Security</li>
+		</ul>
+		</div>
+		<div class="line2">
+		<h1>COMPANY</h1>
+		<ul>
+		<li>About</li>
+		<li>Careers</li>
+		<li>Brand Center</li>
+		<li>Get in touch</li>
+		<li>Blog</li>
+		<li>WhatsApp Stories</li>
+		</ul>
+		</div>
+		<div class="line2">
+		<h1>DOWNLOAD</h1>
+		<ul>
+		<li>Mac/PC</li>
+		<li>Android</li>
+		<li>IPhone</li>
+		</ul>
+		</div>
+		<div class="line2">
+		<h1>HELP</h1>
+		<ul>
+		<li>Help Center</li>
+		<li>Twitter</li>
+		<li>Facebook</li>
+		<li>Coronavirus</li>
+		</ul>
+		</div>
+	</div>
+	
+		<div class="rfooter">
+	<div class="rline1">
+		<h1>WHATSAPP</h1>
+		<ul>
+		<li>Features</li>
+		<li>Security</li>
+		<li>Download</li>
+		<li>Whatsap Web</li>
+		<li>Business</li>
+		<li>Security</li>
+		</ul>
+			<span class="rline2">
+		<h1 style="padding-top: 20px">DOWNLOAD</h1>
+		<ul>
+		<li>Mac/PC</li>
+		<li>Android</li>
+		<li>IPhone</li>
+		</ul>
+		</span>
+		</div>
+		<div class="rline2">
+		<h1>COMPANY</h1>
+		<ul>
+		<li>About</li>
+		<li>Careers</li>
+		<li>Brand Center</li>
+		<li>Get in touch</li>
+		<li>Blog</li>
+		<li>WhatsApp Stories</li>
+		</ul>
+		
+		<span class="rline2">
+		<h1 style="padding-top: 20px">HELP</h1>
+		<ul>
+		<li>Help Center</li>
+		<li>Twitter</li>
+		<li>Facebook</li>
+		<li>Coronavirus</li>
+		</ul>
+		</span>
+	</div>
+			</div>
+	<div class="footer2">
+	<h3>2022 © WhatsApp LLC</h3>
+	<h4>Privacy & Terms<i class="fa-solid fa-chevron-right"></i></h4>
+	</div>
+	<div class="rfooter2">
+	<h3>2022 © WhatsApp LLC</h3>
+	<h4>Privacy & Terms<i class="fa-solid fa-chevron-right"></i></h4>
+	</div>
+
+
+	
+
+	
+	
+</body>
+</html>
